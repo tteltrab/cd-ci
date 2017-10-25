@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "html-validator-cli": "^3.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "prettier": "^1.7.4",
@@ -13,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test": "html-validator --file=test/index.html --verbose"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

@@ -14,7 +14,7 @@ Person 1 and 2 should work together on each step, with the defined person drivin
     1. Ensure you have the HTML file on your local machine
     2. Make a change to the list of shows
     3. Push the change back up to the shared repository
-5. Spend the rest of the time simultaneously creating new "favorites" lists (movies, foods, celebrities) and pushing the changes up. You may have to deal with some conflicts! That's part of integration.
+5. Spend the rest of the time simultaneously creating new "favorites" lists (movies, foods, celebrities) without talking to each other, and pushing up/pulling down the changes. You may have to deal with some conflicts! That's part of integration (and just development in general).
 
 ### Note
 This is a simple example of making very small changes.
