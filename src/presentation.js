@@ -51,12 +51,12 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
-          <Heading size={4} textColor="secondary" caps>
+          <Heading size={4} textColor="secondary">
             Who is this person and why is he here?
           </Heading>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
+          <Heading size={6} textColor="secondary">
             Previous Role
           </Heading>
           <List>
@@ -113,7 +113,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
+          <Heading size={6} textColor="secondary">
             Why am I here?
           </Heading>
           <Appear>
