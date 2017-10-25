@@ -1,6 +1,6 @@
 # CD-CI Presentation
 
-This repository houses the presentation for CD-CI.
+This repository houses the presentation for CD-CI. Deployed via netlify, https://cd-ci.netlify.com/#/
 
 ## Available Scripts
 
