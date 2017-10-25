@@ -357,7 +357,12 @@ export default class Presentation extends React.Component {
               Can refer to either, ideally in most cases deployment.
             </ListItem>
             <ListItem>
-              Deployment automates the step of moving code to production.
+              Continuous delivery means your code is always ready to be
+              deployed.
+            </ListItem>
+            <ListItem>
+              Continuous deployment is the automation of the step of moving code
+              to production.
             </ListItem>
           </List>
           <Image
