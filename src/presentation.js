@@ -378,6 +378,21 @@ export default class Presentation extends React.Component {
             path to production, and quicker client feedback.
           </Text>
         </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text>Best Practices</Text>
+          <List padding="0 0 0 40">
+            <ListItem>Reviews</ListItem>
+            <ListItem>Automation</ListItem>
+            <ListItem>Testing (also automated)</ListItem>
+            <ListItem>Small changes</ListItem>
+          </List>
+          <Text textAlign="left">
+            Through reviewing and testing, you increase knowledge and confidence
+            in the code. You have more conversation around the code, and reduce
+            bugs. You can deploy changes live to your app multiple times per
+            day.
+          </Text>
+        </Slide>
         <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
           <Heading size={4} textColor="secondary" caps>
             Thank you!<br />
