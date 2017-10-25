@@ -286,7 +286,6 @@ export default class Presentation extends React.Component {
             <br />
           </List>
         </Slide>
-
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6}>Best Practices</Heading>
           <List padding="0 0 0 40">
@@ -315,7 +314,69 @@ export default class Presentation extends React.Component {
           <Text>Integrating with every (hopefully small) contribution.</Text>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6}>So let's try it out!</Heading>
+          <Heading size={6}>So let's do it!</Heading>
+          <Image
+            alt="two people one keyboard"
+            src="https://media.giphy.com/media/yUlFNRDWVfxCM/giphy.gif"
+          />
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>
+            Continuous Delivery and Deployment
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text textAlign="left">
+            Continuous deployment is, in short, automation of the software
+            delivery process.
+          </Text>
+          <br />
+          <List padding="0 0 0 40">
+            <ListItem>Every time you deliver code, you deploy it</ListItem>
+            <br />
+            <ListItem>
+              Tools and infrastructure are used to help do this{' '}
+              <em>automatically</em>
+            </ListItem>
+            <br />
+            <ListItem>
+              There are many such tools, but the tool we'll be looking at today
+              is TravisCI.
+            </ListItem>
+          </List>
+          <Image
+            alt="travis CI logo"
+            src="https://travis-ci.com/images/logos/TravisCI-Mascot-1.svg"
+            height={200}
+          />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text>CD: Delivery vs. Deployment?</Text>
+          <List padding="0 0 0 40">
+            <ListItem>
+              Can refer to either, ideally in most cases deployment.
+            </ListItem>
+            <ListItem>
+              Deployment automates the step of moving code to production.
+            </ListItem>
+          </List>
+          <Image
+            alt="continuous delivery vs. deployment breakdown"
+            src="https://wac-cdn.atlassian.com/dam/jcr:84fa9fcf-4ad0-4417-96d3-e5d3387d7f81/CDmicro-600x338-retina2x-B_cicds.png?cdnVersion=ht"
+            height={400}
+          />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text>Benefits</Text>
+          <List padding="0 0 0 40">
+            <ListItem>Less error prone</ListItem>
+            <ListItem>Saves Developer Time</ListItem>
+            <ListItem>Reduces lead time (time to delivery)</ListItem>
+          </List>
+          <Text textAlign="left">
+            With reduced lead time, you benefit through earlier ROI, cheaper
+            path to production, and quicker client feedback.
+          </Text>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
           <Heading size={4} textColor="secondary" caps>
