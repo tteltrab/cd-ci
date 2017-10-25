@@ -61,7 +61,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>
-              IBM Senior Software Development Engineer/Tech Lead
+              IBM Senior Software Development Engineer / Tech Lead
             </ListItem>
             <br />
             <ListItem>
@@ -158,8 +158,8 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Text>
-            Working on a team and ensuring your code is consistent, working, and
-            up-to-date can be very difficult.
+            Working with a team while also ensuring your code is up-to-date and
+            working can be challenging.
           </Text>
           <br />
           <Image
@@ -173,26 +173,206 @@ export default class Presentation extends React.Component {
             and build software effectively.
           </Text>
         </Slide>
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>
+            Continuous Integration
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" textAlign="left">
+            Imagine this scenario:
+          </Heading>
+          <List padding="0 0 0 40">
+            <ListItem>You're working with a team.</ListItem>
+            <br />
+            <ListItem>
+              You're working on separate pieces of the application, and each
+              have most of your code ready.
+            </ListItem>
+            <br />
+            <ListItem>Your project deadline is next week.</ListItem>
+            <br />
+            <ListItem>
+              You haven't brought your code together yet, or tried hosting it.
+            </ListItem>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <Heading size={1}>
+          <Image
+            src="http://static1.squarespace.com/static/5539b16ae4b09e35ffe0d93c/55c27624e4b0db8468d6a825/57c73fd0d2b8574ea2f13334/1472679095663/59631492.jpg?format=1000w"
+            alt="arnold saying ship it"
+            width={500}
+          />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Image
+            src="http://i.memecaptain.com/gend_images/jevOcA.gif"
+            alt="ship launch going horribly"
+            width={500}
+          />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="primary">
+          <Heading size={6} caps>
+            You're in for a baaad week.{' '}
+            <span role="img" aria-label="disappointed face">
+              😞
+            </span>
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" textAlign="left">
+            The Problems:
+          </Heading>
+          <List padding="0 0 0 40">
+            <ListItem>
+              Integrating code is difficult and time consuming.
+            </ListItem>
+            <br />
+            <ListItem>Additional Bugs Introduced</ListItem>
+            <br />
+            <ListItem>Source control conflicts to resolve.</ListItem>
+            <br />
+            <ListItem>Hosting can be error prone and time consuming.</ListItem>
+          </List>
+          <Text textAlign="left">
+            So you have a lot to do (and probably fix), and very little time.
+          </Text>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="primary">
+          <Heading size={6}>So how can we avoid this?</Heading>
+          <br />
+          <Appear>
+            <Heading size={4} textColor="tertiary">
+              <strong>Continuous Integration</strong>
+            </Heading>
+          </Appear>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" textAlign="left">
+            Continuous Integration
+          </Heading>
+          <br />
+          <Text textAlign="left">
+            In short, this is the process of <strong>integrating</strong> your
+            code into a known working code base often.
+          </Text>
+          <List padding="0 0 0 40">
+            <ListItem>No building features in isolation</ListItem>
+            <br />
+            <ListItem>No waiting until the end to combine code</ListItem>
+          </List>
+          <Text textAlign="left">
+            The key is for developers to keep changes small, and to check them
+            into a main branch of a shared repository early and often.
+          </Text>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text textAlign="left">
+            This doesn't help quality in and of itself, but helps reduce waste.
+          </Text>
+          <List padding="0 0 0 40">
+            <ListItem>Accelerates Collaborative Development</ListItem>
+            <br />
+            <ListItem>Reduces "rework" and duplicate work</ListItem>
+            <br />
+            <ListItem>Minimizes cost of integration</ListItem>
+            <br />
+            <ListItem>Increases visibility</ListItem>
+            <br />
+            <ListItem>
+              Not rushing to fix bugs at the end, but iterating on them
+              throughout.
+            </ListItem>
+            <br />
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6}>Best Practices</Heading>
+          <List padding="0 0 0 40">
+            <ListItem>
+              Regularly contribute code to the shared repository
+            </ListItem>
+            <br />
+            <ListItem>
+              Regularly refresh local copy with shared repository copy
+            </ListItem>
+            <br />
+            <ListItem>More to come...</ListItem>
+            <br />
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Text>
+            In short, everyone treats the main branch as the "working product",
+            and contributes to that.
+          </Text>
+          <br />
+          <Image
+            alt="main repository image"
+            src="http://today.lbl.gov/wp-content/uploads/sites/3/2015/02/git-workflow-svn.png"
+          />
+          <Text>Integrating with every (hopefully small) contribution.</Text>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6}>So let's try it out!</Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>
+            Thank you!<br />
+            <br />Incoming Resources...
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading size={3}>
             <span role="img" aria-label="thumbs-up">
               👍
             </span>
           </Heading>
           <List>
-            <ListItem>
-              <Link href="https://github.com/tteltrab/testing-cdci-examples">
-                Github Repo
+            <ListItem textSize="20px">
+              Github Repo:{' '}
+              <Link
+                textColor="#03A9FC"
+                href="https://github.com/tteltrab/testing-cdci-examples"
+              >
+                https://github.com/tteltrab/testing-cdci-examples
               </Link>
             </ListItem>
-            <ListItem>
-              <Link href="https://www.agilealliance.org/glossary/continuous-deployment/">
-                Agile Alliance Continuous Deployment
+            <ListItem textSize="20px">
+              Agile Alliance Continuous Deployment:{' '}
+              <Link
+                textColor="#03A9FC"
+                href="https://www.agilealliance.org/glossary/continuous-deployment/"
+              >
+                https://www.agilealliance.org/glossary/continuous-deployment/
               </Link>
             </ListItem>
-            <ListItem>
-              <Link href="https://www.digitalocean.com/community/tutorials/an-introduction-to-continuous-integration-delivery-and-deployment">
-                DigitalOcean CI/CD Intro
+            <ListItem textSize="20px">
+              DigitalOcean CI/CD Intro:{' '}
+              <Link
+                textColor="#03A9FC"
+                href="https://www.digitalocean.com/community/tutorials/an-introduction-to-continuous-integration-delivery-and-deployment"
+              >
+                https://www.digitalocean.com/community/tutorials/an-introduction-to-continuous-integration-delivery-and-deployment
+              </Link>
+            </ListItem>
+          </List>
+          <Text textColor="primary">Feel free to reach out!</Text>
+          <List>
+            <ListItem textSize="20px">
+              Me on GitHub:{' '}
+              <Link textColor="#03A9FC" href="https://github.com/tteltrab">
+                https://github.com/tteltrab
+              </Link>
+            </ListItem>
+            <ListItem textSize="20px">
+              Me on LinkedIn:{' '}
+              <Link
+                textColor="#03A9FC"
+                href="https://www.linkedin.com/in/nick-bartlett/"
+              >
+                https://www.linkedin.com/in/nick-bartlett/
               </Link>
             </ListItem>
           </List>
