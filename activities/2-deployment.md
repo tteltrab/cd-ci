@@ -20,7 +20,9 @@ We're going to use [a test repo](https://github.com/tteltrab/testing-demo) as a 
         * This gives Travis permission to do the push to the `gh-pages` branch every time the build passes.
         * GitHub sees code in that branch and will deploy it for us automatically.
 
-  5. On line 14 of your deploy script (https://github.com/USERNAME/testing-demo/blob/master/.deploy.sh#L14) - the one that says `git config user.email "nbartlett7@gmail.com"` - change the email to your github email.
+  5. Update the `.deploy.sh` file in your forked repository to be specific to your repository.
+     * On line 14 (https://github.com/USERNAME/testing-demo/blob/master/.deploy.sh#L14) - `git config user.email "nbartlett7@gmail.com"` - change the email to your github email.
+     * On line 21 (https://github.com/USERNAME/testing-demo/blob/master/.deploy.sh#L21) - `git push --force "https://${GH_TOKEN}@github.com/tteltrab/testing-demo.git" master:gh-pages > /dev/null 2>&1` - change the username (`tteltrab`) to your GitHub username.
 
   6. Make a change to your HTML page (add your name!).
      1. Then, commit and push your change to the repository on GitHub. 
